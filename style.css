@@ -1,0 +1,300 @@
+main {
+    background-image: linear-gradient(30deg, #CE7777, #2B3A55);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#logIn-form, #signIn-form {
+    width: 30%;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid rgba(180, 39, 142, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#loginLogo img{
+    height: 150px;
+    margin-bottom: 3rem;
+}
+
+input{
+    opacity: .5;
+}
+
+.form-control:focus {
+    opacity: 1;
+    border: #CE7777;
+}
+
+label {
+    color: white;
+}
+
+#passwordHelp {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #2B3A55;
+}
+
+.btn-primary:hover {
+    background-color: #CE7777;
+    border-color: #a55555;
+}
+
+a {
+    color: #131f36;
+}
+
+a:hover{
+    color: #a55555;
+    text-decoration: none;
+}
+
+.red, small {
+    color: #e06b6b!important;
+}
+
+
+#signInFooter {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+#createAccountText {
+    margin-top: 2rem;
+}
+
+/* CONTENT.HTML */
+
+#logo {
+    width: 3rem;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#contentMain {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 4rem;
+}
+
+#headerUserUI {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+#logOut:hover {
+    background-color: #CE7777;
+    border-color: #a55555;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 4rem;
+    height: calc(100vh - 5rem);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#toDo {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#aside{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#joke {
+    width: 100%;
+    height: 40vh;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+#monthImg {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(180, 39, 142, 0.4);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#monthImg h3{
+    font-size: 5rem;
+    color:#2B3A55;
+}
+
+#monthFact{
+    padding-top: 1.5rem;
+    color:#2B3A55;
+    text-shadow: 2px 1px 0px rgba(243, 243, 243, 0.1);
+}
+
+#toDoInputWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 1rem 0 2rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #E8C4C4;
+}
+
+#taskInput {
+    width: 70%;
+    padding: .5rem;
+    padding-left: 2rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(180, 39, 142, 0.4);
+    border-radius: .5rem;
+}
+
+#taskInput:focus, #taskInput:hover {
+    opacity: 1;
+}
+
+.material-symbols-outlined {
+    margin-left: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid rgba(180, 39, 142, 0.4);
+    border-radius: .5rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.material-symbols-outlined:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#toDoList{
+    width: 100%;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listItem:first-child{
+    margin-top: 2rem;
+}
+
+.listItem p {
+    width: calc(70% - 58px);
+    padding: .5rem 2rem;
+    text-align: left;
+    background-color: rgba(255, 255, 255, .9);
+    border: 1px solid rgba(180, 39, 142, 0.4);
+    border-radius: .5rem;
+}
+
+#jokeText{
+    padding: 1rem 0 2rem;
+}
+
+
+@media only screen and (max-width: 1900px){
+    #signIn-form{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #contentMain, #toDo, #wrapper{
+        height: auto;
+    }
+
+    #wrapper {
+      flex-direction: column;
+    }
+
+    #toDo, #aside, #taskInput {
+        width: 90%;
+    }
+
+    .listItem p{
+        width: calc(90% - 58px);
+    }
+
+    
+    #signIn-form{
+        width: 60%;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #logIn-form, #signIn-form{
+        width: 70%;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    #signIn-form #signInFooter{
+        flex-direction: column;
+    }
+  }

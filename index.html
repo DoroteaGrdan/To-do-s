@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <div id="logIn-form">
+      <form onsubmit="event.preventDefault()">
+        <div class="form-group">
+          <div id="loginLogo">
+            <a href="https://github.com/DoroteaGrdan"><img src="img/logo-blue.png" alt="logo"></a>
+          </div>
+          <label for="inputUsernameLogIn" id="inputUsernameLogInLabel">Username</label>
+          <input type="username" class="form-control" id="inputUsernameLogIn" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="inputPasswordLogIn" id="inputPasswordLogInLabel">Password</label>
+          <input type="password" class="form-control" id="inputPasswordLogIn" placeholder="Password">
+        </div>
+        <button class="btn btn-primary" onclick="handleLogIn()">Log In</button>
+      </form>
+      <div id="createAccountText">
+        <label>Don't have an account? <a href="signIn.html">Make a new one.</a></label>
+      </div>
+    </div>
+  </main>
+  <script src="user.service.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
